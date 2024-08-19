@@ -52,6 +52,7 @@ Wins:
 - Code is separated and routed properly for better readability purposes.
 - Implemented error handling in various cases.
 - Implemented version control (GitHub).
+- Successfully created routes for CRUD operations and implemented RESTful API endpoints for managing notes.
 
 Difficulties:
 - Setting up Passport.js and Google OAuth was a challenge, had to resort to watching youtube videos after trying to read the documentation.
