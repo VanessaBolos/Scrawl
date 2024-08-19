@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    /* General styles */
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container styling */
+    .container-fluid-custom {
+      position: relative; /* Ensure proper positioning for absolute children */
+    }
+
+    /* Background and overlay positioning */
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* Place behind the content */
+      opacity: 0.5; /* Optional: Adjust opacity for better text visibility */
+    }
+
+    .overlay-gif {
+      width: 100px; /* Adjust the width as needed */
+      height: auto; /* Maintain aspect ratio */
+      margin-left: 20px; /* Space between the button and the GIF */
+    }
+
+    /* Content styling */
+    .home-title {
+      position: relative; /* Ensure it’s above the background */
+      z-index: 1; /* Ensure it's above the background */
+    }
+
+    /* Flex container for button and GIF */
+    .button-container {
+      display: flex;
+      align-items: center; /* Center vertically */
+      justify-content: center; /* Center horizontally */
+      gap: 20px; /* Space between button and GIF */
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid container-fluid-custom py-md-5 mb-5">
+    <main>
+      <div class="row py-md-5 text-center justify-content-center">
+        <div class="col-md-12 col-lg-6 mb-6 mb-md-0 position-relative">
+          <!-- Main content -->
+          <h1 class="display-2 fw-bold mb-4 home-title">
+            Write your thoughts down before you forget.
+          </h1>
+          <p class="fs-4 mb-4">
+            SCRAWL is free-to-use note app made with Node.Js, EJS & MongoDB.
+          </p>
+          <div class="button-container">
+            <a href="/signup" class="btn btn-primary btn-lg">Try SCRAWL, it's FREE!</a>
+            <img src="img/pusheen-pusheen-cat.gif" alt="Animated GIF" class="overlay-gif">
+          </div>
+        </div>  
+      </div>
+    </main>
+  </div>
+</body>
+</html>

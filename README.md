@@ -41,3 +41,25 @@ npm install connect-mongo dotenv ejs express express-ejs-layouts express-session
 11. Create a login or register with any email to use!
 
 # Enjoy!
+
+## Author's notes:
+
+Wins:
+- Implemented a simple note-taking app with user authentication using Passport.js and Google OAuth.
+- Utilized MongoDB as the database to store user data and notes.
+- Implemented a simple layout using EJS templates.
+- Used Express.js as the web framework to handle requests and responses.
+- Code is separated and routed properly for better readability purposes.
+- Implemented error handling in various cases.
+- Implemented version control (GitHub).
+
+Difficulties:
+- Setting up Passport.js and Google OAuth was a challenge, had to resort to watching youtube videos after trying to read the documentation.
+- MongoDB was a bit tricky to set up, had to make sure to I was connected to the right connection.
+- EJS templates were a confusing to set up, I got lost from all the folders I've created.
+- I had to make sure to install all the dependencies and make sure they were all connected properly.
+- I had to make sure to set up the environment variables properly.
+- A lot of trial and error trying to make Google auth and passport-local auth work in the same page (login/signup).
+- Took a long time to decide how it should look like. Did not end up focusing on CSS.
+- Had to go back on previous lessons and watch tutorials how to achieve several parts of the project.
+- ChatGPT is once again my debugger.

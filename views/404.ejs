@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <style>
+        .background-container {
+            position: relative; /* Make sure the child elements are positioned relative to this container */
+            height: 50vh; /* Ensure the div covers the full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .background-gif {
+            position: absolute; /* Position the GIF absolutely within the container */
+            top: 20px; /* Adjust top position as needed */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .content {
+            position: relative; /* Ensure the content stays in normal flow */
+            z-index: 1; /* Make sure content is above the GIF */
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <img src="/img/fat-cat.gif" class="background-gif" alt="Fun GIF">
+        <div class="content">
+            <h1 class="display-2 fw-bold mb-4 position-relative home-title">
+                Page not found :C
+            </h1>
+            <a href="/" class="btn btn-primary btn-lg">Explore SCRAWL.</a>
+        </div>
+    </div>
+</body>
+</html>

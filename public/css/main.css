@@ -1,0 +1,69 @@
+:root {
+    --background-color: #ffffff;
+    --bg-primary-rgb: #242629;
+}
+
+body {
+    font-family: 'Roboto', system-ui;
+    background-color: var(--background-color);
+    color: var(--bg-primary-rgb);
+    font-weight: 300;
+    font-size: 1.2rem;
+    background-image: url(../img/Crumpled.jpg);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Unbounded', cursive;
+    font-weight: 800;
+}
+
+.container-fluid-custom {
+    max-width: 1600px;
+}
+
+/* Button */
+.btn {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    border-radius: 2rem;
+}
+
+header {
+    background-color: #e3e3e300; 
+    padding: 1.5rem 0; /* Increased padding for better spacing */
+}
+
+header .d-flex {
+    flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+    align-items: center;
+}
+
+header a {
+    text-transform: uppercase; /* Make the logo text stand out */
+    margin-right: 15px;
+}
+
+header form {
+    flex-grow: 1; /* Make the search bar grow to fill available space */
+    max-width: 600px; /* Limit the search bar width */
+}
+
+header .btn {
+    padding: 0.5rem 1.5rem; /* Add padding to buttons */
+}
+
+@media (max-width: 768px) {
+    header .d-flex {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+    
+    header form {
+        width: 100%; /* Search bar takes full width on small screens */
+        margin-top: 10px;
+    }
+
+    header .text-end {
+        margin-top: 10px;
+    }
+}
+
